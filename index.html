@@ -1,10 +1,45 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom position-fixed top-0 end-0 start-0">
+      <div class="container-fluid">
+        <h1 class="mb-0">
+          <a class="navbar-brand d-block py-0" href="#">Fixie</a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fs-7" href="javascript:;">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-7" href="javascript:;">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-7" href="javascript:;">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
 <main class="main">
   <section class="collection">
     <div class="container h-100">
@@ -164,3 +199,50 @@ current: index
     </div>
   </section>
 </main>
+
+
+    <footer class="footer bg-light p-6 p-md-0" data-aos="slide-up" data-aos-offset="0">
+      <div class="container px-4 position-relative">
+        <div class="d-block d-md-flex justify-content-end justify-content-md-between align-items-center">
+          <ul class="footerMenu d-none d-lg-flex list-unstyled mb-0">
+            <li><a href="javascript:;" class="fw-bold px-4">Product</a></li>
+            <li><a href="javascript:;" class="fw-bold px-4">Blog</a></li>
+            <li><a href="javascript:;" class="fw-bold px-4">contact</a></li>
+          </ul>
+          <h2 class="fs-10 mb-0 position-absolute top-50 start-50">© 2020 Fixie. All Rights Reserved.</h2>
+          <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/logo-fixie.svg" alt="logo"
+            class="fotterLogo d-none d-md-inline me-4 my-4">
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          // Global settings:
+          disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+          startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+          initClassName: 'aos-init', // class applied after initialization
+          animatedClassName: 'aos-animate', // class applied on animation
+          useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+          disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+          debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+          throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+          offset: 120, // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 600, // values from 0 to 3000, with step 50ms
+          easing: 'ease', // default easing for AOS animations
+          once: false, // whether animation should happen only once - while scrolling down
+          mirror: false, // whether elements should animate out while scrolling past them
+          anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+  </body>
+
+</html>
