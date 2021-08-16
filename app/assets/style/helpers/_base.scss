@@ -1,0 +1,29 @@
+$font-lato: 'Lato', sans-serif;
+$font-title: 'Merriweather', serif;
+
+body{
+  font-family: $font-lato;
+  color: $secondary;
+}
+
+
+.font-title{
+  font-family: $font-title;
+  font-style: italic;
+  color: $primary;
+}
+
+img{
+  vertical-align: middle;
+}
+
+i{
+  vertical-align: middle;
+}
+
+.main{
+  margin-top: 97px;
+  @include media-breakpoint-up(md) {
+    margin-top: 100px;
+  }
+}

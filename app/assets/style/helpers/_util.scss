@@ -1,0 +1,13 @@
+.title-lg{
+  color: $white;
+  @include media-breakpoint-up(lg){
+    color: $primary;
+  }
+}
+
+.content-lg{
+  color: $white;
+  @include media-breakpoint-up(lg){
+    color: $secondary;
+  }
+}

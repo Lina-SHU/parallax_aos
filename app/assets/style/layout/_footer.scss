@@ -1,0 +1,18 @@
+.footerMenu{
+  li{
+    a{
+      color: $primary;
+      &:hover{
+        color: rgba($black, .5);
+      }
+    }
+  }
+}
+
+.footer{
+  h2{
+    width: 210px;
+    height: 16px;
+    margin: -8px 0 0 -105px;
+  }
+}

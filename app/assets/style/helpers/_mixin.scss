@@ -1,0 +1,10 @@
+@mixin title{
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin bg{
+  background-size: cover;
+  background-position: center center;
+}
